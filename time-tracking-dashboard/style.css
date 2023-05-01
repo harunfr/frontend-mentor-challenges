@@ -1,0 +1,58 @@
+.period-button:hover {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.main-container {
+  font-family: 'Rubik', sans-serif;
+}
+/* Primary Colors */
+.my-bg-main {
+  background-color: hsl(246, 80%, 60%);
+}
+.my-bg-red-100 {
+  background-color: hsl(15, 100%, 70%);
+}
+.my-bg-blue {
+  background-color: hsl(195, 74%, 62%);
+}
+.my-bg-red-200 {
+  background-color: hsl(348, 100%, 68%);
+}
+.my-bg-green {
+  background-color: hsl(145, 58%, 55%);
+}
+.my-bg-violet {
+  background-color: hsl(264, 64%, 52%);
+}
+.my-bg-orange {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/* Neutral Colors */
+.my-bg-blue-700 {
+  background-color: hsl(226, 43%, 10%);
+}
+.my-bg-blue-500 {
+  background-color: hsl(235, 46%, 20%);
+}
+.my-bg-blue-300 {
+  background-color: hsl(235, 45%, 61%);
+}
+.my-text-blue-100 {
+  color: hsl(236, 100%, 87%);
+}
+
+.w-32 {
+  width: 32%;
+}
+.w-38 {
+  width: 38%;
+}
+
+/* Media Query */
+@media (min-width: 1250px) {
+  /* … */
+  .main-container > .container {
+    padding: 0 7rem;
+  }
+}
