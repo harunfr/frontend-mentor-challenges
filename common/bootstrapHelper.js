@@ -8,7 +8,7 @@ bootstrapHelper.textContent =
 // Styling for helper
 bootstrapHelper.style.fontSize = '40px'
 bootstrapHelper.style.opacity = '0.6'
-bootstrapHelper.style.position = 'absolute'
+bootstrapHelper.style.position = 'fixed'
 bootstrapHelper.style.left = '50%'
 bootstrapHelper.style.bottom = '40px'
 bootstrapHelper.style.transform = 'translateX(-50%)'
