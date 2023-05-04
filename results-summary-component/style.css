@@ -2,8 +2,32 @@
 .main-container {
   font-family: 'Hanken Grotesk', sans-serif;
 }
+/*
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 7
+*/
 
 /* Left Card */
+.left-card {
+  z-index: 2;
+}
+.bg-gradient-1 {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+.bg-gradient-2 {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
 .circle {
   width: 200px;
   height: 200px;
@@ -12,7 +36,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #6c757d;
 }
 .circle h1 {
   font-size: 72px;
@@ -23,35 +46,68 @@
 .circle p {
   font-size: 16px;
   margin: 0;
-  color: white;
 }
 
 .bottom-title {
   font-size: 2rem;
   font-weight: bold;
 }
+.my-card-text {
+  padding: 1.3rem 2.6rem;
+  color: hsl(241, 100%, 89%);
+}
 
-.bg-royal-blue {
-  background-color: hsl(241, 81%, 54%);
+.text-result-title {
+  color: hsl(241, 100%, 89%);
+}
+.text-percent {
+  color: hsl(241, 100%, 89%);
 }
 
 /* Right Card */
+.right-card {
+  transform: translateX(-3.5rem);
+  box-shadow: 10px 10px 56px 0px hsl(241deg 28.35% 57.74% / 40%);
+  padding-left: 4.5rem;
+}
+.card-section {
+  padding: 12px 10px;
+  border-radius: 8px;
+}
+.card-percent {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
 .reaction-section {
   color: hsl(0, 100%, 67%);
-  background-color: hsl(0deg 100% 67% / 20%);
+  background-color: hsl(0deg 100% 67% / 7%);
 }
 
 .memory-section {
   color: hsl(39, 100%, 56%);
-  background-color: hsl(39deg 100% 56% / 20%);
+  background-color: hsl(39deg 100% 56% / 7%);
 }
 
 .verbal-section {
   color: hsl(166, 100%, 37%);
-  background-color: hsl(166deg 100% 37% / 20%);
+  background-color: hsl(166deg 100% 37% / 7%);
 }
 
 .visual-section {
   color: hsl(234, 85%, 45%);
-  background-color: hsl(234deg 85% 45% / 20%);
+  background-color: hsl(234deg 85% 45% / 7%);
+}
+
+.ms3-2 {
+  margin-left: 3.2rem;
+}
+
+.me-4-0 {
+  margin-right: 1.2rem;
+  padding-right: 35px;
+}
+
+.btn-continue {
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
 }

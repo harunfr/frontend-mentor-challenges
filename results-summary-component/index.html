@@ -36,67 +36,53 @@
     <script src="../common/bootstrapHelper.js" defer></script>
     <script src="script.js" defer></script>
     <!--  -->
-    <style>
-      .card-section {
-        padding: 10px;
-        border-radius: 8px;
-      }
-      .card-section h6 {
-        margin-bottom: 5px;
-      }
-      .card-section p {
-        margin: 0;
-      }
-      .card-percent {
-        color: #6c757d;
-      }
-      .card-footer button {
-        border-radius: 20px;
-      }
-    </style>
 
     <!--  -->
     <title>Results Summary Component</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="container">
-        <div class="row">
+    <div class="main-container vh-100">
+      <div class="container h-100">
+        <div
+          class="row h-100 d-flex align-content-center justify-content-center"
+        >
           <!-- Left Card -->
-          <div class="card col bg-royal-blue">
+          <div class="card left-card col-4 border-0 pe-0 ps-4">
             <div
-              class="card-body d-flex flex-column justify-content-center align-items-center"
+              class="card-body bg-gradient-1 rounded-5 ms3-2 d-flex flex-column justify-content-center align-items-center"
             >
-              <h5 class="card-title m-3 h3 text-muted">
+              <h5 class="card-title h4 text-result-title mb-3 mt-4">
                 Your Result
               </h5>
-              <div class="circle mb-2">
+              <div class="circle bg-gradient-2 mb-1 mt-4">
                 <h1 class="">76</h1>
-                <p>of 100</p>
+                <p class="text-percent">of 100</p>
               </div>
               <h5
-                class="card-title mt-3 mb-0 bottom-title text-light"
+                class="card-title mt-3 mb-3 bottom-title text-light"
               >
                 Great
               </h5>
-              <p class="card-text text-muted px-4">
+              <p class="card-text my-card-text text-center">
                 You scored higher than 65% of the people who have
                 taken these tests.
               </p>
             </div>
           </div>
 
-          <!-- , -->
-          <div class="card col">
-            <div class="card-body">
-              <h5 class="card-title mb-4">Summary</h5>
+          <!-- Right Card -->
+          <div class="card col-4 border-0 pe-0 ps-4">
+            <div
+              class="card-body me-4-0 d-flex flex-column right-card rounded-5"
+            >
+              <h5 class="card-title h4 py-4 mb-1">Summary</h5>
               <!-- Reaction Section -->
               <div
                 class="d-flex justify-content-between mb-3 card-section reaction-section"
               >
                 <div class="d-flex align-items-center px-1">
                   <img src="./images/icon-reaction.svg" alt="" />
-                  <h6 class="mb-0 px-1">Reaction</h6>
+                  <h6 class="mb-0 px-3">Reaction</h6>
                 </div>
                 <p
                   class="mb-0 card-percent text-dark fw-bolder py-1 px-2"
@@ -111,11 +97,9 @@
               >
                 <div class="d-flex align-items-center px-1">
                   <img src="./images/icon-memory.svg" alt="" />
-                  <h6 class="mb-0 px-1">Memory</h6>
+                  <h6 class="mb-0 px-3">Memory</h6>
                 </div>
-                <p
-                  class="mb-0 card-percent text-dark fw-bolder py-1 px-2"
-                >
+                <p class="mb-0 card-percent text-dark fw-bolder px-2">
                   80 / <span class="text-muted">100</span>
                 </p>
               </div>
@@ -126,7 +110,7 @@
               >
                 <div class="d-flex align-items-center px-1">
                   <img src="./images/icon-verbal.svg" alt="" />
-                  <h6 class="mb-0 px-1">Verbal</h6>
+                  <h6 class="mb-0 px-3">Verbal</h6>
                 </div>
                 <p
                   class="mb-0 card-percent text-dark fw-bolder py-1 px-2"
@@ -141,7 +125,7 @@
               >
                 <div class="d-flex align-items-center px-1">
                   <img src="./images/icon-visual.svg" alt="" />
-                  <h6 class="mb-0 px-1">Visual</h6>
+                  <h6 class="mb-0 px-3">Visual</h6>
                 </div>
                 <p
                   class="mb-0 card-percent text-dark fw-bolder py-1 px-2"
@@ -150,7 +134,9 @@
                 </p>
               </div>
               <!--  -->
-              <button class="btn btn-primary rounded-pill">
+              <button
+                class="btn btn-continue rounded-pill py-3 mt-4 fw-bold"
+              >
                 Continue
               </button>
             </div>
